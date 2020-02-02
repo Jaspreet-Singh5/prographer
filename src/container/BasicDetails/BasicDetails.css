@@ -1,0 +1,14 @@
+.BasicDetails {
+    margin: 20px auto;
+    width: 100%;
+    text-align: center;
+}
+
+.BasicDetailsForm {
+}
+
+.Label {
+  width: 100%;
+  text-align: left;
+  font-size: 1.4rem;
+}

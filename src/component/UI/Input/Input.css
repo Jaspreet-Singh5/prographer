@@ -1,0 +1,101 @@
+.Input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+.Label {
+    font-weight: normal;
+    display: block;
+    margin-bottom: 8px;
+    width: 100%;
+    text-align: left;
+    font-size: 1.4rem;
+}
+
+.InputElement {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: white;
+    font: inherit;
+    padding: 6px 10px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.InputElement:focus {
+    outline: none;
+    background-color: #ccc;
+}
+
+.Invalid {
+    border-bottom: 2px solid red;
+}
+
+.Valid {
+    border-bottom: 2px solid green;
+}
+
+.selectTwo {
+  width: 48%;
+  display: inline;
+}
+
+.btn {
+  /* border: 3px solid #1a1a1a; */
+  /* border-radius: 50px 50px 50px 50px; */
+  display: inline-block;
+  padding: 10px;
+  position: relative;
+  text-align: center;
+  -webkit-transition: background 600ms ease, color 600ms ease;
+  transition: background 600ms ease, color 600ms ease;
+}
+
+input[type="radio"].toggle {
+  display: none;
+}
+input[type="radio"].toggle + label {
+  cursor: pointer;
+  min-width: 60px;
+}
+input[type="radio"].toggle + label:hover {
+  background: none;
+  color: #1a1a1a;
+}
+input[type="radio"].toggle + label:after {
+  background: #EA4D23;
+  content: "";
+  height: 100%;
+  position: absolute;
+  top: 0;
+  -webkit-transition: left 200ms cubic-bezier(0.77, 0, 0.175, 1);
+  transition: left 200ms cubic-bezier(0.77, 0, 0.175, 1);
+  width: 100%;
+  z-index: -1;
+}
+input[type="radio"].toggle.toggleLeft + label {
+  border-right: 0;
+}
+input[type="radio"].toggle.toggleLeft + label:after {
+  left: 100%;
+}
+input[type="radio"].toggle.toggleRight + label {
+  margin-left: -5px;
+}
+input[type="radio"].toggle.toggleRight + label:after {
+  left: -100%;
+}
+input[type="radio"].toggle:checked + label {
+  cursor: default;
+  color: #fff;
+  -webkit-transition: color 200ms;
+  transition: color 200ms;
+}
+input[type="radio"].toggle:checked + label:after {
+  left: 0;
+}

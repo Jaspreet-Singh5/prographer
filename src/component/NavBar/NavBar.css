@@ -1,0 +1,44 @@
+.NavContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 5.5rem;
+}
+
+.NavInnerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 15%;
+  height: 100%;
+}
+
+@media (max-width: 60rem) {
+
+  .NavInnerContainer {
+    width: 40%;
+  }
+}
+
+.NavLogo {
+  background-image: url(/img/logo@2x.png);
+  height: 3rem;
+  width: 12rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+.NavNotificationIcon {
+  color: #d4d4d4!important;
+  font-size: 3rem;
+}
+
+.NavUser {
+  background-image: url(/img/2@2x.png);
+  background-size: cover;
+  border-radius: 50%;
+  height: 80%;
+  width: 5rem;
+}
